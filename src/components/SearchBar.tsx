@@ -41,7 +41,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
             "w-full h-14 px-5 pl-12 pr-16",
             "bg-white/80 dark:bg-black/30 backdrop-blur-lg",
             "border border-border/50 rounded-full",
-            "text-foreground placeholder:text-gray-600",
+            "text-black dark:text-white placeholder:text-gray-600",
             "transition-all duration-300 ease-spring",
             "focus:border-primary/50 focus:ring-primary/20 focus:ring-offset-0",
             "hover:shadow-md hover:border-primary/30",
