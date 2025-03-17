@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Users, Bookmark, GitFork } from "lucide-react";
+import { Users, GitFork } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface StatsProps {
@@ -28,7 +28,7 @@ const Stats: React.FC<StatsProps> = ({
       value: following,
     },
     {
-      icon: <Bookmark className="w-4 h-4" />,
+      icon: <GitFork className="w-4 h-4" />,
       label: "Repositories",
       value: repos,
     },
@@ -42,7 +42,7 @@ const Stats: React.FC<StatsProps> = ({
           className={cn(
             "flex flex-col items-center justify-center p-4",
             "glass-card rounded-2xl subtle-shadow",
-            "transition-all duration-300 hover:shadow-lg",
+            "transition-all duration-300 hover:shadow-lg hover:bg-black/60",
             "animate-fade-in",
             "opacity-0"
           )}
@@ -52,7 +52,7 @@ const Stats: React.FC<StatsProps> = ({
             {stat.icon}
             <span className="text-xs font-medium">{stat.label}</span>
           </div>
-          <span className="text-2xl font-semibold">{stat.value.toLocaleString()}</span>
+          <span className="text-2xl font-semibold text-white">{stat.value.toLocaleString()}</span>
         </div>
       ))}
     </div>

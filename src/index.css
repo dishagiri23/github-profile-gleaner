@@ -5,38 +5,6 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 210 40% 2%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 210 40% 2%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 40% 2%;
-
-    --primary: 210 100% 50%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 210 40% 2%;
-
-    --muted: 210 20% 96%;
-    --muted-foreground: 210 20% 40%;
-
-    --accent: 210 20% 96%;
-    --accent-foreground: 210 40% 2%;
-
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 210 20% 98%;
-
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 210 100% 50%;
-
-    --radius: 0.75rem;
-  }
-
-  .dark {
     --background: 210 40% 4%;
     --foreground: 210 20% 98%;
 
@@ -64,6 +32,38 @@
     --border: 210 40% 16%;
     --input: 210 40% 16%;
     --ring: 210 100% 60%;
+
+    --radius: 0.75rem;
+  }
+
+  .light {
+    --background: 210 20% 98%;
+    --foreground: 210 40% 2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 2%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 2%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 40% 2%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 20% 40%;
+
+    --accent: 210 20% 96%;
+    --accent-foreground: 210 40% 2%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 100% 50%;
   }
 }
 
@@ -87,11 +87,11 @@
 
 @layer components {
   .glass-card {
-    @apply bg-white/70 dark:bg-black/50 backdrop-blur-xl border border-white/20 dark:border-white/10;
+    @apply bg-black/50 backdrop-blur-xl border border-white/10;
   }
   
   .subtle-shadow {
-    @apply shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_40px_-15px_rgba(0,0,0,0.3)];
+    @apply shadow-[0_10px_40px_-15px_rgba(0,0,0,0.3)];
   }
   
   .text-balance {
